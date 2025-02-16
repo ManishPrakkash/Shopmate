@@ -2,26 +2,26 @@
     "products":[
         {
             "id":10001,
-            "name":"Master in React",
+            "name":"Master in mongo DB",
             "price":"25",
             "stock": true
         },
         {
             "id":10002,
-            "name":"Master in React",
-            "price":"25",
+            "name":"Master in ExpressJs",
+            "price":"45",
             "stock": true
         },
         {
             "id":10003,
             "name":"Master in React",
-            "price":"25",
-            "stock": true
+            "price":"55",
+            "stock": false
         },
         {
             "id":10004,
-            "name":"Master in React",
-            "price":"25",
+            "name":"Master in NodeJs",
+            "price":"22",
             "stock": true
         }
     ]
