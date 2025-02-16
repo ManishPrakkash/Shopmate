@@ -1,0 +1,28 @@
+{
+    "products":[
+        {
+            "id":10001,
+            "name":"master in mongo DB",
+            "price":"24",
+            "stock":true
+        },
+        {
+            "id":10002,
+            "name":"master in ExpressJs",
+            "price":"20",
+            "stock":true
+        },
+        {
+            "id":10003,
+            "name":"master in ReactJs",
+            "price":"50",
+            "stock":true
+        },
+        {
+            "id":10004,
+            "name":"master in NodeJs",
+            "price":"35",
+            "stock":true
+        }
+    ]
+}
