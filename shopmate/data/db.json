@@ -4,7 +4,7 @@
             "id":10001,
             "name":"master in mongo DB",
             "price":"24",
-            "stock":true
+            "stock":false
         },
         {
             "id":10002,
@@ -22,7 +22,7 @@
             "id":10004,
             "name":"master in NodeJs",
             "price":"35",
-            "stock":true
+            "stock":false
         }
     ]
 }
