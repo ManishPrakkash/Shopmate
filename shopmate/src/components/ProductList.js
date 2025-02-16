@@ -1,20 +1,11 @@
 import { useEffect, useState } from "react";
+import { useFetch } from "../hooks/useFetch";
+
 export const ProductList = () => {
 
-  const [products, setProducts] = useState([])
-  const [url, setUrl]= useState("http://127.0.0.1:8000/products")
-  const [counter, setCounter]=useState(0);
-
-  useEffect(() => {
-
-    const fetchProduct = async()=>{
-      const response = await fetch(url);
-      const data = await response.json();
-      setProducts(data);
-    }
-    fetchProduct();
-
-  }, [url]);
+  const [url, setUrl]= useState("http://127.0.0.1:8000/products");
+  
+  const {data: products,loading} = useFetch(url);
 
   return (
     <section>
@@ -23,7 +14,10 @@ export const ProductList = () => {
         <button onClick={()=>setUrl("http://127.0.0.1:8000/products?stock=true")}>Available</button> 
         <button onClick={()=>setUrl("http://127.0.0.1:8000/products?stock=false")}>Unavailable</button> 
       </div>
-       {products.map((product)=>(
+
+      {loading && <p>Loading Products...</p>}
+      
+       {products && products.map((product)=>(
     
         <div className="card" key={product.id}>
           
